@@ -1,10 +1,12 @@
+import PackageSizeCard from './components/PackageSizeCard'
+import PackageSizeGroup from './components/PackageSizeGroup'
 import './styles/styles.css'
 
 export default function App() {
 
   return (
     <>
-      <h1>Vite + React</h1>
+      <PackageSizeGroup />
     </>
   )
 }
