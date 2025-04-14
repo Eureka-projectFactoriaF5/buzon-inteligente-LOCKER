@@ -1,4 +1,4 @@
-export const BlueButton = ({ text, type = "button", ...props}) => (
+export const ExitButton = ({ text, type = "button", ...props}) => (
     <button
       type={type}
       {...props}
