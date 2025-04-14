@@ -1,8 +1,8 @@
 import PackageSizeCard from './PackageSizeCard';
 
- export const PackageSizeGroup = () => {
+const PackageSizeGroup = () => {
   return (
-    <div className="flex flex-wrap justify-center items-center gap-4 p-10">
+    <div className="flex flex-wrap justify-center items-center gap-4 p-10 min-h-screen">
       <PackageSizeCard
         size="S"
         dimensions="165 mm x 215 mm x 85 mm"
@@ -18,8 +18,8 @@ import PackageSizeCard from './PackageSizeCard';
       <PackageSizeCard
         size="L"
         dimensions="435 mm x 375 mm x 85 mm"
-        label="Paquete grande"
-        sizeClass="w-36 h-36"
+        label="Paquete mediano"
+        sizeClass="w-34 h-34"
       />
       <PackageSizeCard
         size="XL"
@@ -31,4 +31,4 @@ import PackageSizeCard from './PackageSizeCard';
   );
 };
 
-
+export default PackageSizeGroup;
