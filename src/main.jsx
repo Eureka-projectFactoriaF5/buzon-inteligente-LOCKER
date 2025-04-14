@@ -1,9 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
+import { InUseModalSizeLocker } from './modals/InUseModalSizeLocker.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <InUseModalSizeLocker />
   </StrictMode>,
 )
