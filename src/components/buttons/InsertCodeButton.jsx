@@ -1,9 +1,9 @@
-export const InsertCodeButton = ({ text, action, type = "button" }) => (
-    <button
-      type={type}
-      onClick={onClick}
-      className="bg-[#fcfcfe] text-[#00174b] w-[28.938rem] h-[7rem] rounded-[2rem] text-[3.125rem] border-[none] mx-auto cursor-pointer font-bree"
-    >
-      {text}
-    </button>
-  );
+export const InsertCodeButton = ({ text, type = "button", ...props}) => (
+  <button
+    type={type}
+    {...props}
+    className="flex justify-center items-center h-[7.125rem] bg-[##FCFCFE] text-[#00174B] rounded-[0.625rem] text-[3rem] border-none #00000040 mx-auto cursor-pointer font-bree"
+  >
+    {text}
+  </button>
+);
