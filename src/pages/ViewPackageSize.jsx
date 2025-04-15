@@ -1,14 +1,14 @@
 import React from "react";
 import PackageSizeGroup from "../components/PackageSizeGroup";
-import ExitButton from "../components/ExitButton";
-import WhiteButton from "../components/WhiteButton";
+{/*import ExitButton from "../components/ExitButton";*/}
+{/*import WhiteButton from "../components/WhiteButton";*/}
 
 const ViewPackageSize = () => {
     return (
         <div className="min-h-screen flex flex-col font-bree bg-gradient-to-b from-[#4574ff] to-[#001748] text-white relative px-8 py-8 text-lg">
 
-            <div className="flex justify-between items-center px-6 mb-6">
-                <img src="/public/IMGS Proyecto/logosinfondoblanco.png" alt="Logo Eureka" className="h-10 md:h-12" />
+            <div className="flex justify-between items-center mb-8">
+                <img src="/public/IMGS Proyecto/logosinfondoazul.png" alt="Logo Eureka" className="h-10 md:h-20" />
                  
                  <ExitButton/>
             </div>
