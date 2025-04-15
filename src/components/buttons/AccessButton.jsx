@@ -2,6 +2,7 @@ import { WhiteButton } from "./WhiteButton";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ErrorCodeModal } from "../modals/ErrorCodeModal";
+import { ExitModalButton } from "./ExitModalButton";
 export const AccessButton = ({
   inputCode,
   text = "Acceder",
@@ -23,12 +24,16 @@ export const AccessButton = ({
       <WhiteButton text={text} onClick={handleClick} {...props} />
       {showModal && (
         <ErrorCodeModal onClose={() => setShowModal(false)}>
-          <div className="text-center px-4 font-bree">
-            <p className="text-[1.68rem] font-medium leading-snug">
-              Credencial de acceso incorrecta ❌
-              <br />
-              Introduce la credencial de nuevo
+          <p className="py-5 text-6xl">❌</p>
+          <div className="text-center px-4">
+            <p className="text-[1.75rem] font-medium leading-snug mb-10">
+              Credencial de acceso incorrecta
             </p>
+            <ExitModalButton
+              className="text-center text-sm"
+              text="Cerrar"
+              onClick={() => setShowModal(false)}
+            />
           </div>
         </ErrorCodeModal>
       )}
