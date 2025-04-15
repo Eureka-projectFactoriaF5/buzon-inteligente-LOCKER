@@ -1,10 +1,10 @@
 import './styles/styles.css'
-
+import FirstView from "./views/FirstView"
 export default function App() {
 
   return (
-    <>
-      <h1>Vite + React</h1>
-    </>
+    <div className="App">
+    <FirstView />
+  </div>
   )
 }
