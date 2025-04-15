@@ -2,7 +2,7 @@ import PackageSizeCard from './PackageSizeCard';
 
 const PackageSizeGroup = () => {
   return (
-    <div className="flex flex-wrap justify-center items-center gap-4 p-10 min-h-screen">
+    <div className="flex flex-wrap justify-center items-center gap-4 p-10">
       <PackageSizeCard
         size="S"
         dimensions="165 mm x 215 mm x 85 mm"
