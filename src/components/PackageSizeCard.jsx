@@ -1,6 +1,7 @@
 const PackageSizeCard = ({ size, dimensions, label, sizeClass }) => {
     return (
         <div
+        data-testid="package-size-card"
         className="bg-white rounded-xl w-58 h-88 p-4 flex flex-col justify-between items-center text-center hover:scale-105 transition-transform"
         style={{ boxShadow: 'inset -8px 0 10px -6px rgba(0, 0, 0, 0.1)' }}
       >
