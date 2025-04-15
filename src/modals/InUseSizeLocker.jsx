@@ -18,7 +18,7 @@ export const InUseSizeLocker = () => {
                     <button id="btn-choose-size" onClick={openModal} className="w-[36%] bg-[#FFFFFF] text-black py-2 px-4 rounded border font-bree text-center cursor-pointer">
                         ESCOGER TAMAÑO
                     </button>
-                    <ExitButton onClick={closeModal} text="SALIR" />
+                    <ExitButton />
                 </div>
             </div>
         </div>
