@@ -8,7 +8,7 @@ const ViewPackageSize = () => {
         <div className="min-h-screen flex flex-col font-bree bg-gradient-to-b from-[#4574ff] to-[#001748] text-white relative px-8 py-8 text-lg">
 
             <div className="flex justify-between items-center px-6 mb-6">
-                <img alt="Logo Eureka" className="h-10 md:h-12" />
+                <img src="/public/IMGS Proyecto/logosinfondoblanco.png" alt="Logo Eureka" className="h-10 md:h-12" />
                  
                  <ExitButton/>
             </div>
@@ -20,7 +20,7 @@ const ViewPackageSize = () => {
             <PackageSizeGroup /> 
             
             <WhiteButton text="Abrir Locker" />
-            
+
         </div>
     );
 };
