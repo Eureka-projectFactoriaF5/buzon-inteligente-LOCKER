@@ -1,5 +1,7 @@
 import React from "react";
 import PackageSizeGroup from "../components/PackageSizeGroup";
+import ExitButton from "../components/ExitButton";
+import WhiteButton from "../components/WhiteButton";
 
 const ViewPackageSize = () => {
     return (
@@ -7,7 +9,8 @@ const ViewPackageSize = () => {
 
             <div className="flex justify-between items-center px-6 mb-6">
                 <img alt="Logo Eureka" className="h-10 md:h-12" />
-                {/* Placeholder ExitButton */}
+                 
+                 <ExitButton/>
             </div>
 
             <h1 className="text-center text-2xl md:text-3xl">
@@ -15,8 +18,9 @@ const ViewPackageSize = () => {
             </h1>
 
             <PackageSizeGroup /> 
-
-            {/* Placeholder <AbrirLocker/> */}
+            
+            <WhiteButton text="Abrir Locker" />
+            
         </div>
     );
 };
