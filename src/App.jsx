@@ -1,10 +1,13 @@
-import './styles/styles.css'
+import { AccessButton } from "./components/buttons/AccessButton";
+import "./styles/styles.css";
 
 export default function App() {
-
   return (
     <>
-      <h1>Vite + React</h1>
+      <body className="bg-black">
+        <h1>Vite + React</h1>
+        <AccessButton />
+      </body>
     </>
-  )
+  );
 }
