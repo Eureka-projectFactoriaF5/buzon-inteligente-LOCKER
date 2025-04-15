@@ -20,15 +20,12 @@ export const AcceptButton = ({ inputCode, text = "Aceptar", redirectPath = "/vis
             <WhiteButton text={text} onClick={handleClick} {...props} />
             {showModal && (
                 <ErrorCodeModal onClose={() => setShowModal(false)}>
+                    <p className="py-5 text-6xl">❌ </p>
                     <div className="text-center px-4">
                         <p className="text-[1.75rem] font-medium leading-snug">
                             Código de entrega incorrecto
-                        <span className="text-red-500">
-                            ❌
-                        </span><br />
-                            Introduce el código de nuevo
-                            </p>
-                    </div>
+                        </p>
+                        </div>
                 </ErrorCodeModal>
             )}
         </>
