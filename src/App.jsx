@@ -1,11 +1,9 @@
-import PackageSizeCard from './components/PackageSizeCard'
-import PackageSizeGroup from './components/PackageSizeGroup'
 import './styles/styles.css'
-
+import FirstView from "./views/FirstView"
 export default function App() {
   return (
-    <>
-      <PackageSizeGroup />
-    </>
+    <div className="App">
+    <FirstView />
+  </div>
   )
 }
