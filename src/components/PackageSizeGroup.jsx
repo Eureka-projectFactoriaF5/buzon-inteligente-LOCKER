@@ -18,7 +18,7 @@ const PackageSizeGroup = () => {
       <PackageSizeCard
         size="L"
         dimensions="435 mm x 375 mm x 85 mm"
-        label="Paquete mediano"
+        label="Paquete grande"
         sizeClass="w-34 h-34"
       />
       <PackageSizeCard
