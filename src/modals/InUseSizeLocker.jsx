@@ -1,6 +1,7 @@
 import "../styles/styles.css";
 import React, { useState } from "react";
 import { ExitButton } from "../components/buttons/ExitButton"; // ajusta el path si está en otra carpeta
+import { WhiteButtonModal } from "../components/buttons/WhiteButtonModal"
 
 export const InUseSizeLocker = () => {
     const [isModalOpen, setModalOpen] = useState(false);
@@ -15,9 +16,7 @@ export const InUseSizeLocker = () => {
                     Los lockers de ese tamaño están ocupados
                 </h1>
                 <div id="modal-btns-inUseLocker" className="flex flex-row justify-center gap-2">
-                    <button id="btn-choose-size" onClick={openModal} className="w-[36%] bg-[#FFFFFF] text-black py-2 px-4 rounded border font-bree text-center cursor-pointer">
-                        ESCOGER TAMAÑO
-                    </button>
+                    <WhiteButtonModal /> 
                     <ExitButton />
                 </div>
             </div>
