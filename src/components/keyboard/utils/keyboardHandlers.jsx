@@ -1,6 +1,14 @@
-export const handleCharKey = (value, setText) => {
-    setText(prevText => prevText + value);
-};
+export const handleCharKey = (value, setText, modifiers) => {
+    const { capsLock, shift } = modifiers;
+    let char = value;
+  
+    if (/[a-z]/i.test(char)) {
+      const isUpper = capsLock !== shift;
+      char = isUpper ? char.toUpperCase() : char.toLowerCase();
+    }
+  
+    setText(prevText => prevText + char);
+  };
 
 export const handleSpaceKey = (setText) => {
     setText(prevText => prevText + ' ');
