@@ -6,7 +6,7 @@ const PackageSizeCard = ({ size, dimensions, label, sizeClass }) => {
       >
         <div className="flex-1 flex items-center justify-center">
           <img
-            src="/IMGS Proyecto/IconoPaquete.svg"
+            src="/images/IconoPaquete.svg"
             alt={`Paquete ${label}`}
             className={`${sizeClass}`}
           />
