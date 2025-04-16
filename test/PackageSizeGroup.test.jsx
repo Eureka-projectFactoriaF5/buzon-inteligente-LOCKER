@@ -2,13 +2,13 @@ import { render, screen } from '@testing-library/react';
 import PackageSizeGroup from '../src/components/PackageSizeGroup';
 
 describe('PackageSizeGroup Component', () => {
-    it('renders without crashing', () => {
+    it('el componente se renderiza correctamente', () => {
         render(<PackageSizeGroup />);
         const container = screen.getAllByAltText(/Paquete/)[0].closest('div');
         expect(container).toBeInTheDocument();
     });
 
-    it('renders all PackageSizeCard components with correct props', () => {
+    it('renderiza todos los componentes PackageSizeCard con las props correctas', () => {
         render(<PackageSizeGroup />);
         const sizes = ['S', 'M', 'L', 'XL'];
         const dimensions = [
