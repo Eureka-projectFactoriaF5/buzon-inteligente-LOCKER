@@ -1,4 +1,3 @@
-import { AccessButton } from "./components/buttons/AccessButton";
 import "./styles/styles.css";
 
 export default function App() {
