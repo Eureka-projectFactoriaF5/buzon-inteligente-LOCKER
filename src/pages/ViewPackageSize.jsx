@@ -8,7 +8,7 @@ const ViewPackageSize = () => {
         <div className="min-h-screen flex flex-col font-bree bg-gradient-to-b from-[#4574ff] to-[#001748] text-white relative px-8 py-8 text-lg">
 
             <div className="flex justify-between items-center mb-8">
-                <img src="/public/IMGS Proyecto/logosinfondoazul.png" alt="Logo Eureka" className="h-10 md:h-20" />
+                <img src="/images/logosinfondoazul.png" alt="Logo Eureka" className="h-10 md:h-20" />
                  
                  <ExitButton/>
             </div>
