@@ -1,7 +1,7 @@
 import React from "react";
 import PackageSizeGroup from "../components/PackageSizeGroup";
-{/*import ExitButton from "../components/ExitButton";*/}
-{/*import WhiteButton from "../components/WhiteButton";*/}
+import ExitButton from "../components/ExitButton";
+import WhiteButton from "../components/WhiteButton";
 
 const ViewPackageSize = () => {
     return (
