@@ -1,9 +1,16 @@
-import { AppRouter } from "./routing/AppRouter";
 
+import React from 'react';
+import {ViewPackageSize} from './pages/ViewPackageSize';
+import PackageSizeCard from './components/PackageSizeCard'
+import PackageSizeGroup from './components/PackageSizeGroup'
+import PendingPackages from './pages/PendingPackages'
+import './styles/styles.css'
 
-function App() {
-  return <AppRouter />;
+export default function App() {
+  return (
+    <>
+      <PendingPackages />
+      <ViewPackageSize /> 
+    </>
+  )
 }
-
-export default App;
-
