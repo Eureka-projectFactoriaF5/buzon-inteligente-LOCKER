@@ -1,4 +1,4 @@
-import PackageSizeCard from './PackageSizeCard';
+import { PackageSizeCard } from './PackageSizeCard'; // ✅
 
 export const PackageSizeGroup = ({ selectedSize, setSelectedSize }) => {
   return (
@@ -38,6 +38,3 @@ export const PackageSizeGroup = ({ selectedSize, setSelectedSize }) => {
     </div>
   );
 };
-
-
-
