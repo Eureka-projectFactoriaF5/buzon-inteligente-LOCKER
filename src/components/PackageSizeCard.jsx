@@ -25,6 +25,3 @@ const PackageSizeCard = ({ size, dimensions, label, sizeClass, isSelected, onSel
 };
 
 export default PackageSizeCard;
-
-  
-  

@@ -81,10 +81,3 @@ export const ViewPackageSize = () => {
     </div>
   );
 };
-
-
-
-
-
-
-
