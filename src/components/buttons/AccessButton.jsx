@@ -6,13 +6,13 @@ import { ExitModalButton } from "./ExitModalButton";
 export const AccessButton = ({
   inputCode,
   text = "Acceder",
-  redirectPath = "/vistapendientes",
+  redirectPath = "/viewPendingPackages",
   ...props
 }) => {
-  //const navigate = useNavigate();
+  const navigate = useNavigate();
   const [showModal, setShowModal] = useState(false);
   const handleClick = () => {
-    const fakeCorrectCode = "123456"; // codigo fakeado
+    const fakeCorrectCode = "123456"; 
     if (inputCode === fakeCorrectCode) {
       navigate(redirectPath);
     } else {
