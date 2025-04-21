@@ -26,6 +26,12 @@ export const ViewPackageSize = () => {
         ¿Cómo es el paquete que deseas entregar?
       </h1>
 
+            <div className="flex justify-between items-center mb-8">
+                <img src="/images/logosinfondoazul.png" alt="Logo Eureka" className="h-10 md:h-20" />
+                 
+                 <ExitButton/>
+            </div>
+
       <PackageSizeGroup />
 
       <WhiteButton text="Abrir Locker" />
