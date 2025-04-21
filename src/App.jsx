@@ -1,4 +1,5 @@
-import Keyboard from './components/keyboard/Keyboard.jsx'
+import { Keyboard } from './components/keyboard/Keyboard.jsx'
+/* import Keyboard from './components/keyboard/Keyboard.jsx' */
 
 /* import PackageSizeCard from './components/PackageSizeCard'
 import PackageSizeGroup from './components/PackageSizeGroup'
