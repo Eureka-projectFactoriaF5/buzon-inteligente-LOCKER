@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { ErrorCodeModal } from "../modals/ErrorCodeModal";
 import { ExitModalButton } from "./ExitModalButton";
 
-export const AcceptButton = ({ inputCode, text = "Aceptar", redirectPath = "/vistatamaños", ...props }) => {
-    //const navigate = useNavigate();
+export const AcceptButton = ({ inputCode, text = "Aceptar", redirectPath = "/view-package-size", ...props }) => {
+    const navigate = useNavigate();
     const [showModal, setShowModal] = useState(false);
 
     const handleClick = () => {

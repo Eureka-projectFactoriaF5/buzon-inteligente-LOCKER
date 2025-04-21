@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import { ViewPackageSize } from "../pages/ViewPackageSize";
 
 
 export const router = createBrowserRouter(
@@ -8,8 +9,8 @@ export const router = createBrowserRouter(
             children: [],
         },
         {
-            path: "*",
-            element: null,
+            path: "/view-package-size",
+            element: <ViewPackageSize />,
         },
     ],
     { basename: "/" }
