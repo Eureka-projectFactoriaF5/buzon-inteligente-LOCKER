@@ -1,10 +1,13 @@
+import { WhiteButton } from './components/buttons/WhiteButton'
 import './styles/styles.css'
 
 export default function App() {
 
   return (
     <>
-      <h1>Vite + React</h1>
+    <div className="w-full h-screen flex items-center justify-center bg-black">
+      <WhiteButton text="Aceptar"/>
+      </div>
     </>
   )
 }
