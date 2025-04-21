@@ -1,13 +1,16 @@
-import { WhiteButton } from './components/buttons/WhiteButton'
+
+import React from 'react';
+import {ViewPackageSize} from './pages/ViewPackageSize';
+import PackageSizeCard from './components/PackageSizeCard'
+import PackageSizeGroup from './components/PackageSizeGroup'
+import PendingPackages from './pages/PendingPackages'
 import './styles/styles.css'
 
 export default function App() {
-
   return (
     <>
-    <div className="w-full h-screen flex items-center justify-center bg-black">
-      <WhiteButton text="Aceptar"/>
-      </div>
+      <PendingPackages />
+      <ViewPackageSize /> 
     </>
   )
 }

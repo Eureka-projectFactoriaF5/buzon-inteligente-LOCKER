@@ -1,1 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
 @import "tailwindcss";
+
+@theme {
+
+  --color-light-blue: #4574FF;
+  --color-dark-blue: #00174B;    
+
+}
+
+:root {
+  width: 100vw;
+  height: 100vh;
+}
+
+.font-bree {
+  font-family: 'Bree Serif', serif;
+}
+
+
+
