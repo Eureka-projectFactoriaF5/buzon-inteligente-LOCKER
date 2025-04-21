@@ -1,12 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-//import { NoAvailableLockers }  from './modals/NoAvailableLockers'
 import './styles/styles.css';
-//import { InUseSizeLocker } from './modals/InUseSizeLocker';
-import { AllLockersFull } from './modals/AllLockersFull';
+import { NoAvailableLockers } from './modals/NoAvailableLockers';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <AllLockersFull />
+    <NoAvailableLockers />
   </StrictMode>,
 )
