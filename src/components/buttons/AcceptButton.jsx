@@ -9,7 +9,7 @@ export const AcceptButton = ({ inputCode, text = "Aceptar", redirectPath = "/vie
     const [showModal, setShowModal] = useState(false);
 
     const handleClick = () => {
-        const fakeCorrectCode = "123456"; // codigo fakeado
+        const fakeCorrectCode = "123456"; // codigo fakeado - vincular con codigo real
         if (inputCode === fakeCorrectCode) {
             navigate(redirectPath);
         } else {
