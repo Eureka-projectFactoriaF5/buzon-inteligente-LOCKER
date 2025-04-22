@@ -32,7 +32,7 @@ export const ViewPackageSize = () => {
       } 
 
       // Enlace a la vista siguiente
-      navigate({/*"/locker/vista-entrega-repartidor"*/}, {
+      navigate("/src/pages/ViewDeliveryMan.jsx", {
         state: { selectedSize },
       });
 
