@@ -1,4 +1,3 @@
-
 import React from "react";
 import { ViewPackageSize } from "./pages/ViewPackageSize";
 import PackageSizeCard from "./components/PackageSizeCard";
@@ -12,5 +11,5 @@ export default function App() {
       <PendingPackages />
       <ViewPackageSize />
     </>
-  )
+  );
 }
