@@ -1,9 +1,12 @@
-import './styles/styles.css'
-import FirstView from "./views/FirstView"
+import { ViewPackageSize } from "./pages/ViewPackageSize";
+import PendingPackages from "./pages/PendingPackages";
+import "./styles/styles.css";
+
 export default function App() {
   return (
-    <div className="App">
-    <FirstView />
-  </div>
+    <>
+      <PendingPackages />
+      <ViewPackageSize />
+    </>
   )
 }
