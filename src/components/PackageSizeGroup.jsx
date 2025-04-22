@@ -1,4 +1,5 @@
-import PackageSizeCard from './PackageSizeCard';
+import { PackageSizeCard } from './PackageSizeCard'; // ✅
+
 
 export const PackageSizeGroup = ({ selectedSize, setSelectedSize }) => {
   return (

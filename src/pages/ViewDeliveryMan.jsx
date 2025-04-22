@@ -24,7 +24,7 @@ export const ViewDeliveryMan = () => {
       </h1>
 
       
-      <div className="flex flex-col gap-4 w-full max-w-md mx-auto">
+      <div className="flex flex-col space-y-5 items-center justify-center">
         <WhiteButtonWish text="🏁Finalizar Entrega" />
         <WhiteButtonWish text="➕Continuar Entrega Parcial" />
         <WhiteButtonWish text="🔚Finalizar Entrega Parcial" />

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { PackageSizeGroup } from "../components/PackageSizeGroup";
 import { ExitButton } from "../components/buttons/ExitButton";
@@ -9,6 +9,17 @@ export const ViewPackageSize = () => {
   const [errorMessage, setErrorMessage] = useState(null);
   const navigate = useNavigate();
 
+  
+  useEffect(() => {
+    if (errorMessage) {
+      const timer = setTimeout(() => {
+        setErrorMessage(null);
+      }, 5000); 
+
+      return () => clearTimeout(timer);
+    }
+  }, [errorMessage]);
+
   const handleOpenLocker = async () => {
     setErrorMessage(null);
 
@@ -16,8 +27,7 @@ export const ViewPackageSize = () => {
       setErrorMessage("Selecciona un tamaño primero");
       return;
     }
-
-    // TODO: Aquí falta el endpoint que abre la puerta
+//falta en ENDPOINT!!
     try {
       const response = await fetch("/api/abrir-locker", {
         method: "POST",
@@ -29,8 +39,8 @@ export const ViewPackageSize = () => {
 
       if (!response.ok) {
         throw new Error("Error al abrir el locker");
-      } 
-      
+      }
+
       navigate("/src/pages/ViewDeliveryMan.jsx", {
         state: { selectedSize },
       });
@@ -44,13 +54,14 @@ export const ViewPackageSize = () => {
   return (
     <div className="min-h-screen flex flex-col font-bree bg-gradient-to-b from-[#4574ff] to-[#001748] text-white relative px-8 py-8 text-lg">
 
-      {/* 🔔 Mensaje de error si existe */}
+      
       {errorMessage && (
         <div className="absolute top-4 left-1/2 transform -translate-x-1/2 bg-red-600 text-white px-6 py-3 rounded-xl shadow-lg text-center z-50">
           {errorMessage}
         </div>
       )}
 
+      
       <div className="flex justify-between items-center mb-8 w-full px-2">
         <div className="flex-shrink-0">
           <img
@@ -64,21 +75,18 @@ export const ViewPackageSize = () => {
         </div>
       </div>
 
+      
       <h1 className="text-center text-2xl md:text-3xl mb-6">
         ¿Cómo es el paquete que deseas entregar?
       </h1>
 
-            <div className="flex justify-between items-center mb-8">
-                <img src="/images/logosinfondoazul.png" alt="Logo Eureka" className="h-10 md:h-20" />
-                 
-                 <ExitButton/>
-            </div>
-
+      
       <PackageSizeGroup
         selectedSize={selectedSize}
         setSelectedSize={setSelectedSize}
       />
 
+      
       <WhiteButton
         text="Abrir Locker"
         onClick={handleOpenLocker}
@@ -87,6 +95,7 @@ export const ViewPackageSize = () => {
     </div>
   );
 };
+
 
 
 

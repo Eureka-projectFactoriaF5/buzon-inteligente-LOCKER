@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Checkbox from "../components/Checkbox";
 
-const PendingPackages = () => {
+export const PendingPackages = () => {
     const [isChecked, setIsChecked] = useState(false);
 
     return (
@@ -27,4 +27,3 @@ const PendingPackages = () => {
         </>
     );
 }
-export default PendingPackages;

@@ -1,4 +1,4 @@
-const PackageSizeCard = ({ size, dimensions, label, sizeClass, isSelected, onSelect }) => {
+export const PackageSizeCard = ({ size, dimensions, label, sizeClass, isSelected, onSelect }) => {
   return (
     <div
       onClick={() => onSelect(size)}
@@ -24,7 +24,6 @@ const PackageSizeCard = ({ size, dimensions, label, sizeClass, isSelected, onSel
   );
 };
 
-export default PackageSizeCard;
 
   
   
