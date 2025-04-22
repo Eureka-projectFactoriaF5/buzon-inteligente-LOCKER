@@ -14,7 +14,7 @@ const PendingPackages = () => {
                     {/* <ExitButton /> */}
                 </div>
 
-                <h1 className="text-5xl text-white">Tus paquetes pendientes</h1>
+                <h1 className="text-center text-2xl md:text-3xl mb-6 text-white">Tus paquetes pendientes</h1>
                 <Checkbox
                     packages={["Paquete 1", "Paquete 2", "Paquete 3"]}
                     checked={isChecked}
