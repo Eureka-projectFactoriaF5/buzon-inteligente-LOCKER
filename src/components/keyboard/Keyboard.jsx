@@ -48,17 +48,19 @@ export const Keyboard = () => {
                 className={`p-[0.9%] size-12 m-[0.2%] transition-colors rounded-sm text-blue text-[1.3rem] font-[700]
                     ${specialStyles[key] || 'bg-white hover:bg-blue-200 flex-1'}`}
                     >           
-                {key === 'space' ? 'SPACIO' : key === 'enter' ? 'INTRO' : key === 'erase' ? 'BORRAR' : isCapsLock ? key.toUpperCase() : key.toLowerCase()}
+                {key === 'space' ? 'ESPACIO' : key === 'enter' ? 'INTRO' : key === 'erase' ? 'BORRAR' : isCapsLock ? key.toUpperCase() : key.toLowerCase()}
             </button>
         );
     };
 
     return (
         <form onSubmit={handleSubmit} className="bg-blue flex flex-col  items-center  mt-[22%] p-4 ">
-            <textarea
+            <input
+                type="text"
+                maxLength="8"
                 value={text}
-                readOnly
-                className="w-[70%] tracking-wider text-center rounded-md bg-white  text-blue-800 text-[2rem] font-bold "
+                onChange={(e) => setText(e.target.value)}
+                className="w-[70%] p-[0.8%] tracking-wider text-center rounded-md bg-white  text-blue-800 text-[2rem] font-bold "
             />
             <div className="bg-blue rounded-lg space-y-2 mt-[6%] w-[70%]">
                 {[numbers, ...letters].map((row, i) => (
