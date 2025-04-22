@@ -30,8 +30,7 @@ export const ViewPackageSize = () => {
       if (!response.ok) {
         throw new Error("Error al abrir el locker");
       } 
-
-      // Enlace a la vista siguiente
+      
       navigate("/src/pages/ViewDeliveryMan.jsx", {
         state: { selectedSize },
       });
