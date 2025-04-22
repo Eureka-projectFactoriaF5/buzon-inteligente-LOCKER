@@ -1,5 +1,5 @@
 import React from "react";
-import { PackageSizeGroup } from "../components/PackageSizeGroup";
+import PackageSizeGroup from "../components/PackageSizeGroup";
 import { ExitButton } from "../components/buttons/ExitButton";
 import { WhiteButton } from "../components/buttons/WhiteButton";
 
@@ -25,12 +25,6 @@ export const ViewPackageSize = () => {
       <h1 className="text-center text-2xl md:text-3xl">
         ¿Cómo es el paquete que deseas entregar?
       </h1>
-
-            <div className="flex justify-between items-center mb-8">
-                <img src="/images/logosinfondoazul.png" alt="Logo Eureka" className="h-10 md:h-20" />
-                 
-                 <ExitButton/>
-            </div>
 
       <PackageSizeGroup />
 
