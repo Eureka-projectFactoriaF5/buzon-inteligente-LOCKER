@@ -19,14 +19,14 @@ export const ViewDeliveryMan = () => {
       </div>
 
       
-      <h1 className="text-center text-2xl md:text-3xl mb-10 font-bold">
+      <h1 className="text-center text-2xl md:text-3xl mb-10">
         ¿Qué deseas hacer ahora?
       </h1>
 
       
-      <div className="flex flex-col space-y-5 items-center justify-center">
+      <div className="flex flex-col space-y-6 items-center justify-center">
+      
         <WhiteButtonWish text="🏁Finalizar Entrega" />
-        <WhiteButtonWish text="➕Continuar Entrega Parcial" />
         <WhiteButtonWish text="🔚Finalizar Entrega Parcial" />
         <WhiteButtonWish text="❌Cancelar Entrega" />
       </div>
