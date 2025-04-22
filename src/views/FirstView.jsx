@@ -5,7 +5,7 @@ export default function FirstView() {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-[#4574FF] to-[#00174B] text-white relative">
       <div className="flex justify-between items-center mb-8">
-         <img src="/public/IMGS Proyecto/logosinfondoazul.png" alt="Logo Eureka" className="h-10 md:h-20" />
+         <img src="/public/images/logosinfondoazul.png" alt="Logo Eureka" className="h-10 md:h-20" />
       </div>  
       
       <div className="flex-grow flex flex-col items-center justify-center text-center px-12">
@@ -38,7 +38,7 @@ export default function FirstView() {
         </div>
 
         <p className="mt-10 text-[1.5rem] text-white/80 font-bree">
-          Gestión provista por Eureka Smart Locker
+        Gracias por confiar en Eureka Smart Locker
         </p>
       </div>
     </div>
