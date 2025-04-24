@@ -2,7 +2,6 @@ import "../styles/styles.css";
 import React, { useState } from "react";
 import { WhiteButtonModal } from "../components/buttons/WhiteButtonModal"
 
-
 export const NoAvailableLockers = () => {
     const [isModalOpen, setModalOpen] = useState(false);
     const openModal = () => setModalOpen(true);
@@ -16,8 +15,7 @@ export const NoAvailableLockers = () => {
                     Todos los lockers están ocupados
                 </h1>
                 <div id="modal-btns-inUseLocker" className="flex flex-row justify-center gap-2 ">
-                    <WhiteButtonModal text="CANCELAR ENTREGA" />  
-                    
+                    <WhiteButtonModal text="CANCELAR ENTREGA" />     
                 </div>
                 <h2 className="text-xm py-1">
                     *Contacta con el cliente para completar entrega alternativa*
