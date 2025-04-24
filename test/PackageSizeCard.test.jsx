@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import PackageSizeCard from '../src/components/PackageSizeCard';
+import { PackageSizeCard } from '../src/components/PackageSizeCard';
 import { expect, it, describe } from 'vitest';
 
 describe('PackageSizeCard', () => {
