@@ -7,7 +7,7 @@ export const ViewDeliveryMan = () => {
     <div className="min-h-screen flex flex-col font-bree bg-gradient-to-b from-[#4574ff] to-[#001748] text-white relative px-8 py-8 text-lg">
 
       
-      <div className="flex justify-between items-center mb-8 w-full px-2">
+      <div className="flex justify-between items-center mb-8 w-full px-2 mb-30">
         <img
           src="/images/logosinfondoazul.png"
           alt="Logo Eureka"
@@ -24,7 +24,7 @@ export const ViewDeliveryMan = () => {
       </h1>
 
       
-      <div className="flex flex-col space-y-6 items-center justify-center">
+      <div className="flex flex-col space-y-10 items-center justify-center">
       
         <WhiteButtonWish text="🏁Finalizar Entrega" />
         <WhiteButtonWish text="🔚Finalizar Entrega Parcial" />
