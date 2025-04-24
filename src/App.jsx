@@ -1,10 +1,15 @@
-import './styles/styles.css'
-import FirstView from "./views/FirstView"
-export default function App() {
+import React from "react";
+import { ViewPackageSize } from "./pages/ViewPackageSize";
+import PackageSizeCard from "./components/PackageSizeCard";
+import PackageSizeGroup from "./components/PackageSizeGroup";
+import PendingPackages from "./pages/PendingPackages";
+import "./styles/styles.css";
 
+export default function App() {
   return (
-    <div className="App">
-    <FirstView />
-  </div>
-  )
+    <>
+      <PendingPackages />
+      <ViewPackageSize />
+    </>
+  );
 }
