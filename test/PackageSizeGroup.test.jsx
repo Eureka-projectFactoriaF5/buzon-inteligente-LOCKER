@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
-import PackageSizeGroup from '../src/components/PackageSizeGroup';
+import { PackageSizeGroup } from '../src/components/PackageSizeGroup';
+import { it } from 'vitest';
 
 describe('PackageSizeGroup Component', () => {
     it('el componente se renderiza correctamente', () => {
