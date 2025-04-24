@@ -1,6 +1,6 @@
 import "../styles/styles.css";
 import React, { useState } from "react";
-import { WhiteButtonModal } from "../components/buttons/WhiteButtonModal"
+import { WhiteButtonModal } from "../buttons/WhiteButtonModal"
 
 export const NoAvailableLockers = () => {
     const [isModalOpen, setModalOpen] = useState(false);

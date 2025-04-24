@@ -1,7 +1,7 @@
 import "../styles/styles.css";
 import React, { useState } from "react";
-import { ExitButton } from "../components/buttons/ExitButton"; // ajusta el path si está en otra carpeta
-import { WhiteButtonModal } from "../components/buttons/WhiteButtonModal"
+import { ExitButton } from "../buttons/ExitButton"; // ajusta el path si está en otra carpeta
+import { WhiteButtonModal } from "../buttons/WhiteButtonModal"
 
 export const InUseSizeLocker = () => {
     const [isModalOpen, setModalOpen] = useState(false);
