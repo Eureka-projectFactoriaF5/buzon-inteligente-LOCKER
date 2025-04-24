@@ -1,6 +1,6 @@
 
 import React from 'react';
-import {ViewPackageSize} from './pages/ViewPackageSize';
+import { ViewPackageSize } from "./pages/ViewPackageSize.1";
 import PackageSizeCard from './components/PackageSizeCard'
 import PackageSizeGroup from './components/PackageSizeGroup'
 import PendingPackages from './pages/PendingPackages'
@@ -10,7 +10,7 @@ export default function App() {
   return (
     <>
       <PendingPackages />
-      <ViewPackageSize /> 
+      <ViewPackageSize />
     </>
   )
 }
