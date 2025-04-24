@@ -11,8 +11,10 @@ const PendingPackages = () => {
 
                 <div className="absolute top-0 left-0 flex justify-between items-center mb-8">
                     <img src="/images/logosinfondoazul.png" alt="Logo Eureka" className="h-10 md:h-20" />
-                    {/* <ExitButton /> */}
+                     
                 </div>
+
+
 
                 <h1 className="text-center text-2xl md:text-3xl mb-6 text-white">Tus paquetes pendientes</h1>
                 <Checkbox
