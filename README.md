@@ -1,6 +1,5 @@
 # Arkímedes Locker
-
-🛠️ Purpose
+## 🛠️ Purpose
 This system simplifies the logistics of last-mile delivery and offers a contactless, secure, and traceable way to manage package exchanges between couriers and recipients.
 
 ## 🔐 Locker System – Smart Package Delivery & Pickup
