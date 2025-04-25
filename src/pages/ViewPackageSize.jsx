@@ -29,7 +29,7 @@ export const ViewPackageSize = () => {
     }
 //falta en ENDPOINT!!
     try {
-      const response = await fetch("/api/abrir-locker", {
+      const response = await fetch({/*/api/abrir-locker"*/}, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
