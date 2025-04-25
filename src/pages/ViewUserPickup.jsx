@@ -2,7 +2,7 @@ import React from "react";
 import { ExitButton } from "../components/buttons/ExitButton";
 import { WhiteButtonWish } from "../components/buttons/WhiteButtonWish";
 
-export const ViewDeliveryMan = () => {
+export const ViewUserPickup = () => {
   return (
     <div className="min-h-screen flex flex-col font-bree bg-gradient-to-b from-[#4574ff] to-[#001748] text-white relative px-8 py-8 text-lg">
 
@@ -26,9 +26,9 @@ export const ViewDeliveryMan = () => {
       
       <div className="flex flex-col space-y-10 items-center justify-center">
       
-        <WhiteButtonWish text="🏁Finalizar Entrega" />
-        <WhiteButtonWish text="🔚Finalizar Entrega Parcial" />
-        <WhiteButtonWish text="❌Cancelar Entrega" />
+        <WhiteButtonWish text="✅Confirmar Recogida" />
+        <WhiteButtonWish text="🔁Reabrir Puerta" />
+        <WhiteButtonWish text="⏳Posponer Recogida" />
       </div>
 
     </div>
