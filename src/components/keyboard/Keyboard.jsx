@@ -18,6 +18,9 @@ export const Keyboard = () => {
     };
 
     const handleKeyPress = (key) => {
+        if (text.length >= 8 && key !== 'erase') {
+            return;}
+
         switch (key) {
             case 'erase':
                 setText(prev => prev.slice(0, -1));
@@ -57,7 +60,6 @@ export const Keyboard = () => {
         <form onSubmit={handleSubmit} className="bg-blue flex flex-col  items-center  mt-[22%] p-4 ">
             <input
                 type="text"
-                maxLength="8"
                 value={text}
                 onChange={(e) => setText(e.target.value)}
                 className="w-[70%] p-[0.8%] tracking-wider text-center rounded-md bg-white  text-blue-800 text-[2rem] font-bold "
