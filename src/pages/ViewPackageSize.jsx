@@ -27,14 +27,14 @@ export const ViewPackageSize = () => {
       setErrorMessage("Selecciona un tamaño primero");
       return;
     }
-//falta en ENDPOINT!!
+
     try {
-      const response = await fetch({/*/api/abrir-locker"*/}, {
-        method: "POST",
+      const response = await fetch(`http://localhost:8080/api/mailboxes/available?mailboxSizeId=${selectedSize}`, {
+        method: "GET",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ size: selectedSize }),
+        
       });
 
       if (!response.ok) {
