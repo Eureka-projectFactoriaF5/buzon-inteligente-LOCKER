@@ -57,14 +57,14 @@ export const Keyboard = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="bg-blue flex flex-col  items-center  mt-[22%] p-4 ">
+        <form onSubmit={handleSubmit} className="bg-blue flex flex-col  items-center  mt-[5%] p-4 ">
             <input
                 type="text"
                 value={text}
                 onChange={(e) => setText(e.target.value)}
                 className="w-[70%] p-[0.8%] tracking-wider text-center rounded-md bg-white  text-blue-800 text-[2rem] font-bold "
             />
-            <div className="bg-blue rounded-lg space-y-2 mt-[6%] w-[70%]">
+            <div className="bg-blue rounded-lg space-y-2 mt-[6%] w-[70%] text-black">
                 {[numbers, ...letters].map((row, i) => (
                     <div key={i} className="flex gap-1">
                         {row.map(renderKey)}
@@ -72,7 +72,6 @@ export const Keyboard = () => {
                 ))}
             </div>
         </form>
-        //añadir el botón que haga el submit.
     );
 };
 
