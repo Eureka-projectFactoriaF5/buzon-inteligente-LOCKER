@@ -3,19 +3,21 @@ import { Link } from "react-router-dom";
 
 export const FirstView = () => {
   return (
+
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-[#4574FF] to-[#00174B] text-white relative">
       <div className="flex justify-between items-center">
-         <img src="/public/images/logosinfondoazul.png" alt="Logo Eureka" className="h-10 md:h-20" />
-      </div>  
-      
+        <img src="/public/images/logosinfondoazul.png" alt="Logo Eureka" className="h-10 md:h-20" />
+      </div>
+
       <div className="flex-grow flex flex-col items-center justify-center text-center px-12">
         <h1 className="text-3xl md:text-4xl font-bree mb-10">
           ¡Bienvenido! ¿Qué deseas hacer hoy?
         </h1>
 
         <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
-         
-          
+
+
+          <Link to="/user-access">
             <div className="w-90 h-90 bg-white text-blue-700 rounded-xl shadow-lg flex flex-col items-center justify-center p-4 hover:scale-105 transition cursor-pointer">
               <img
                 src="/images/RecogerPaqueteInicio.png"
@@ -23,10 +25,9 @@ export const FirstView = () => {
                 className="w-4/5 h-4/5 object-contain"
               />
             </div>
-          
+          </Link>
 
-         
-         
+          <Link to="/delivery-access">
             <div className="w-90 h-90 bg-white text-blue-700 rounded-xl shadow-lg flex flex-col items-center justify-center p-4 hover:scale-105 transition cursor-pointer">
               <img
                 src="/images/EntregarPaqueteInicio.svg"
@@ -34,7 +35,9 @@ export const FirstView = () => {
                 className="w-4/5 h-4/5 object-contain"
               />
             </div>
-          
+          </Link>
+
+
         </div>
 
         <p className="mt-10 text-[1.5rem] text-white/80 font-bree">
@@ -42,5 +45,6 @@ export const FirstView = () => {
         </p>
       </div>
     </div>
+
   );
 }

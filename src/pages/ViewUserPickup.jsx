@@ -35,7 +35,11 @@ export const ViewUserPickup = () => {
           className="h-20 md:h-16"
         />
         <div className="scale-60 md:scale-70 mr-1">
-          <ExitButton text="Salir" />
+        <Link to="/">
+          <div className="scale-60 md:scale-70 mr-1">
+            <ExitButton text="Salir" />
+          </div>
+        </Link>
         </div>
       </div>
 
