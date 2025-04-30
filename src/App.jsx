@@ -1,24 +1,9 @@
 import React from "react";
-import { ViewPackageSize } from "./pages/ViewPackageSize";
-import { FirstView } from "./pages/FirstView";
-import { ViewDeliveryAcces } from "./pages/ViewDeliveryAcces";
-import { ViewUserAcces } from "./pages/ViewUserAcces";
-import { ViewDeliveryMan } from "./pages/ViewDeliveryMan";
-import {ViewUserPickup} from "./pages/ViewUserPickup";
-import  { PendingPackages } from "./pages/PendingPackages";
+import AppRouter from "./routing/Router";
 import "./styles/styles.css";
 
 export default function App() {
   return (
-    <>
-     <FirstView />
-     <ViewDeliveryAcces />
-     <ViewPackageSize /> 
-      <ViewDeliveryMan />
-      <ViewUserAcces />
-      <ViewUserPickup />
-      <PendingPackages />
-    </>
+    <AppRouter />
   );
 }
-
