@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { ExitButton } from "../components/buttons/ExitButton";
+import { Keyboard } from "../components/keyboard/Keyboard";
 
 
 export const ViewUserAcces =() => {
@@ -19,5 +19,7 @@ export const ViewUserAcces =() => {
       
                   <h1 className="text-center text-2xl md:text-3xl mb-6">
                    Escribe Código de Acceso
-            </h1>
+                  </h1>
+
+                  <Keyboard />
       </div>)}

@@ -27,7 +27,6 @@ export const ViewPackageSize = () => {
       setErrorMessage("Selecciona un tamaño primero");
       return;
     }
-//falta en ENDPOINT!!
     try {
       const response = await fetch({/*/api/abrir-locker"*/}, {
         method: "POST",
